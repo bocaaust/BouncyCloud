@@ -90,7 +90,7 @@ function createblock()
         distcent = distcent - WIDTH/16
         shiftcounter = 1
     end
-    cords = {vec2(WIDTH/2+lr*distcent,HEIGHT),vec2(WIDTH/2+lr*distcent,HEIGHT+29*(WIDTH/2+distcent)/144*xw),vec2(lr2,HEIGHT+29*(WIDTH/2+distcent)/144*xw),vec2(lr2,HEIGHT)}
+    cords = {vec2(WIDTH/2+lr*distcent,HEIGHT),vec2(WIDTH/2+lr*distcent,HEIGHT+29*(WIDTH/2+distcent)/144),vec2(lr2,HEIGHT+29*(WIDTH/2+distcent)/144),vec2(lr2,HEIGHT)}
     lr = lr * -1
     if lr2 == WIDTH then 
         lr2 = 0
@@ -193,12 +193,12 @@ fill(63, 253, 0, 11)
     gravity = vec3(Gravity.x,-1,0)
     physics.gravity(gravity)
     -- This sets the line thickness
-    strokeWidth(5)
+    strokeWidth(5*xw)
     if start then
         if score < 10 then
-         fontSize(600)
+         fontSize(600*xw)
             else
-            fontSize(400)
+            fontSize(400*xw)
             end
         font("Futura-CondensedMedium")
     fill(167, 191, 212, 187)
@@ -269,12 +269,12 @@ fill(63, 253, 0, 11)
         sprite("Project:cloud",bouncecord[1],bouncecord[2],WIDTH/2,WIDTH/2)
         sprite("Project:backboard2",WIDTH/2,HEIGHT*2/3-50*xw,WIDTH*7/8+80*xw,HEIGHT/4+100*xw)
         fill(0, 0, 0, 255)
-        fontSize(25)
+        fontSize(25*xw)
         text("HIGHSCORE: ",WIDTH*3/4,HEIGHT*7/8)
         text(math.tointeger((readLocalData("highscore",0))),WIDTH*3/4+80*xw,HEIGHT*7/8)
-        fontSize(45)
+        fontSize(45*xw)
         text("tap to start",WIDTH/2,HEIGHT*3/4)
-        fontSize(20)
+        fontSize(20*xw)
         text("tilt device to move the cloud",WIDTH/2,(HEIGHT*3/4)-100*xw)
         text("the goal is to keep the cloud on the screen",WIDTH/2,HEIGHT*3/4-220*xw)  
         fill(13, 212, 185, 255)
@@ -300,19 +300,19 @@ function touched(touch)
  sound(SOUND_RANDOM, 33291)
       sound(SOUND_RANDOM, 33291)
         
-        table.insert(blocks, physics.body(POLYGON,vec2(0,0),vec2(WIDTH,0),vec2(WIDTH,29*(WIDTH/2+distcent)/144*xw),vec2(0,29*(WIDTH/2+distcent)/144*xw)))
+        table.insert(blocks, physics.body(POLYGON,vec2(0,0),vec2(WIDTH,0),vec2(WIDTH,29*(WIDTH/2+distcent)/144),vec2(0,29*(WIDTH/2+distcent)/144)))
         blocks[#blocks].gravityScale = 0.1
         blocks[#blocks].angularDamping = 100
         blocks[#blocks].restitution = 1
         blocks[#blocks].linearDamping = .5
         blocks[#blocks].linearVelocity = vec2(0,-80)
-        table.insert(blocks, physics.body(POLYGON,vec2(WIDTH/2-distcent,HEIGHT/2),vec2(WIDTH,HEIGHT/2),vec2(WIDTH,HEIGHT/2+29*(WIDTH/2+distcent)/144*xw),vec2(WIDTH/2-distcent,HEIGHT/2+29*(WIDTH/2+distcent)/144*xw)))
+        table.insert(blocks, physics.body(POLYGON,vec2(WIDTH/2-distcent,HEIGHT/2),vec2(WIDTH,HEIGHT/2),vec2(WIDTH,HEIGHT/2+29*(WIDTH/2+distcent)/144),vec2(WIDTH/2-distcent,HEIGHT/2+29*(WIDTH/2+distcent)/144)))
         blocks[#blocks].angularDamping = 100
         blocks[#blocks].linearDamping = .5
         blocks[#blocks].gravityScale = 0.1
         blocks[#blocks].restitution = 1
         blocks[#blocks].linearVelocity = vec2(0,-40)
-        table.insert(blocks, physics.body(POLYGON,vec2(WIDTH/2+distcent,HEIGHT/4*3),vec2(0,HEIGHT/4*3),vec2(0,3*HEIGHT/4+29*(WIDTH/2+distcent)/144*xw),vec2(WIDTH/2+distcent,HEIGHT/4*3+29*(WIDTH/2+distcent)/144*xw)))
+        table.insert(blocks, physics.body(POLYGON,vec2(WIDTH/2+distcent,HEIGHT/4*3),vec2(0,HEIGHT/4*3),vec2(0,3*HEIGHT/4+29*(WIDTH/2+distcent)/144),vec2(WIDTH/2+distcent,HEIGHT/4*3+29*(WIDTH/2+distcent)/144)))
         blocks[#blocks].angularDamping = 100
         blocks[#blocks].linearDamping = .5
         blocks[#blocks].gravityScale = 0.1

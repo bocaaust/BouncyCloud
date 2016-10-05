@@ -12,7 +12,7 @@
 		DB0DC0B818C4608A005F4723 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0DC0B718C4608A005F4723 /* CoreLocation.framework */; };
 		DB0DC0BA18C4608E005F4723 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0DC0B918C4608E005F4723 /* Accelerate.framework */; };
 		DB3B3F6317815CFE00A992DB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3B3F6217815CFE00A992DB /* Security.framework */; };
-		DB5578F31BB9185E0024F638 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = DB5578F21BB9185E0024F638 /* Assets */; settings = {ASSET_TAGS = (); }; };
+		DB5578F31BB9185E0024F638 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = DB5578F21BB9185E0024F638 /* Assets */; };
 		DB5E404418CD80570001CC1F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB5E404318CD80570001CC1F /* Social.framework */; };
 		DB8A004716F2DBDA005F87A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A004616F2DBDA005F87A6 /* UIKit.framework */; };
 		DB8A004916F2DBDA005F87A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A004816F2DBDA005F87A6 /* Foundation.framework */; };
@@ -49,11 +49,8 @@
 		DBC21B9C19ED75A000CD519E /* GameCenterAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCE375F19E9F77800E382EC /* GameCenterAddon.m */; };
 		DBCE376219E9F82D00E382EC /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCE376119E9F82D00E382EC /* GameKit.framework */; };
 		DBE0BEA31A8B693D0010DC06 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE0BEA21A8B693D0010DC06 /* iAd.framework */; };
-		DBEA4FC31BC23A0200000A55 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEA4FC21BC23A0200000A55 /* Launch Screen.storyboard */; settings = {ASSET_TAGS = (); }; };
-		DBEA4FC81BC243D800000A55 /* LaunchBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = DBEA4FC41BC243D800000A55 /* LaunchBackground.png */; settings = {ASSET_TAGS = (); }; };
-		DBEA4FC91BC243D800000A55 /* LaunchLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = DBEA4FC51BC243D800000A55 /* LaunchLogo.png */; settings = {ASSET_TAGS = (); }; };
-		DBEA4FCA1BC243D800000A55 /* LaunchLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBEA4FC61BC243D800000A55 /* LaunchLogo@2x.png */; settings = {ASSET_TAGS = (); }; };
-		DBEA4FCB1BC243D800000A55 /* LaunchLogo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBEA4FC71BC243D800000A55 /* LaunchLogo@3x.png */; settings = {ASSET_TAGS = (); }; };
+		DBEA4FC31BC23A0200000A55 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEA4FC21BC23A0200000A55 /* Launch Screen.storyboard */; };
+		DBEA4FC81BC243D800000A55 /* LaunchBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = DBEA4FC41BC243D800000A55 /* LaunchBackground.png */; };
 		DBF0F5A91A3D0B78007693C1 /* iAdsAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF0F5A71A3D0B78007693C1 /* iAdsAddon.m */; };
 /* End PBXBuildFile section */
 
@@ -108,9 +105,6 @@
 		DBE0BEA21A8B693D0010DC06 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		DBEA4FC21BC23A0200000A55 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		DBEA4FC41BC243D800000A55 /* LaunchBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchBackground.png; sourceTree = "<group>"; };
-		DBEA4FC51BC243D800000A55 /* LaunchLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchLogo.png; sourceTree = "<group>"; };
-		DBEA4FC61BC243D800000A55 /* LaunchLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchLogo@2x.png"; sourceTree = "<group>"; };
-		DBEA4FC71BC243D800000A55 /* LaunchLogo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchLogo@3x.png"; sourceTree = "<group>"; };
 		DBF0F5A71A3D0B78007693C1 /* iAdsAddon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iAdsAddon.m; sourceTree = "<group>"; };
 		DBF0F5A81A3D0B78007693C1 /* iAdsAddon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iAdsAddon.h; sourceTree = "<group>"; };
 		DBF44365170F00F20026A109 /* CodeaAddon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeaAddon.h; sourceTree = "<group>"; };
@@ -252,9 +246,6 @@
 				DB8A00A216F2E859005F87A6 /* SourceSansPro-Regular.otf */,
 				DB8A00A316F2E859005F87A6 /* SourceSansPro-Semibold.otf */,
 				DBEA4FC41BC243D800000A55 /* LaunchBackground.png */,
-				DBEA4FC51BC243D800000A55 /* LaunchLogo.png */,
-				DBEA4FC61BC243D800000A55 /* LaunchLogo@2x.png */,
-				DBEA4FC71BC243D800000A55 /* LaunchLogo@3x.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -320,8 +311,13 @@
 		DB8A003B16F2DBDA005F87A6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = MyCompany;
+				TargetAttributes = {
+					DB8A004216F2DBDA005F87A6 = {
+						DevelopmentTeam = GP8729KYLX;
+					};
+				};
 			};
 			buildConfigurationList = DB8A003E16F2DBDA005F87A6 /* Build configuration list for PBXProject "BouncyCloud" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -348,14 +344,11 @@
 				DB8A005116F2DBDA005F87A6 /* InfoPlist.strings in Resources */,
 				DB8A006B16F2E019005F87A6 /* RuntimeResources.bundle in Resources */,
 				DBEA4FC81BC243D800000A55 /* LaunchBackground.png in Resources */,
-				DBEA4FCB1BC243D800000A55 /* LaunchLogo@3x.png in Resources */,
 				DB8A006C16F2E019005F87A6 /* ToolsResources.bundle in Resources */,
 				DB8A00A416F2E859005F87A6 /* Inconsolata.otf in Resources */,
 				DB8A00A516F2E859005F87A6 /* SourceSansPro-Bold.otf in Resources */,
-				DBEA4FCA1BC243D800000A55 /* LaunchLogo@2x.png in Resources */,
 				DB5578F31BB9185E0024F638 /* Assets in Resources */,
 				DBEA4FC31BC23A0200000A55 /* Launch Screen.storyboard in Resources */,
-				DBEA4FC91BC243D800000A55 /* LaunchLogo.png in Resources */,
 				DB8A00A616F2E859005F87A6 /* SourceSansPro-Regular.otf in Resources */,
 				DB8A00A716F2E859005F87A6 /* SourceSansPro-Semibold.otf in Resources */,
 				DB0DC0AE18C459EC005F4723 /* Images.xcassets in Resources */,
@@ -422,6 +415,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -471,6 +465,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BouncyCloud/BouncyCloud-Prefix.pch";
 				INFOPLIST_FILE = "BouncyCloud/BouncyCloud-Info.plist";
@@ -483,6 +478,7 @@
 					"-ObjC",
 					"-all_load",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AustinLubetkin.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -494,6 +490,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BouncyCloud/BouncyCloud-Prefix.pch";
 				INFOPLIST_FILE = "BouncyCloud/BouncyCloud-Info.plist";
@@ -506,6 +503,7 @@
 					"-ObjC",
 					"-all_load",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AustinLubetkin.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
