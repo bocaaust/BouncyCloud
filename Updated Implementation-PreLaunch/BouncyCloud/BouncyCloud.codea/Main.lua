@@ -81,6 +81,9 @@ function setup()
      --   x = x + int
     --    table.insert(intarr,int)
    -- end
+    if xw > 1 then
+        xw = 1
+    end
 end
 
 function createblock()
